@@ -1,0 +1,29 @@
+set global local_infile=1;
+load data local infile
+'/usuarios/fede/descargas/Proyecto/Siniestros.csv'
+into table Siniestros
+fields terminated by ','
+terminated by '/r/n';
+ignore 1 lines;
+load data local infile
+'/usuarios/fede/descargas/Proyecto/Asegurado.csv'
+into table Asegurado
+fields terminated by ','
+terminated by '/r/n';
+ignore 1 lines;
+load data local infile
+'/usuarios/fede/descargas/Proyecto/Denuncia.csv'
+into table Denuncia
+fields terminated by ','
+terminated by '/r/n';
+ignore 1 lines;
+'/usuarios/fede/descargas/Proyecto/Analista.csv'
+into table Analista
+fields terminated by ','
+terminated by '/r/n';
+ignore 1 lines;
+'/usuarios/fede/descargas/Proyecto/Tercero.csv'
+into table Tercero
+fields terminated by ','
+terminated by '/r/n';
+ignore 1 lines;
